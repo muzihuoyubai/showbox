@@ -20,7 +20,7 @@ untangleGame.Line = function (startPoint, endPoint, thickness) {
 untangleGame.createRandomCircles = function (width, height) {
     // 随机画5个圈
     var circlesCount = 5;
-    var circleRadius = 20;
+    var circleRadius = 10;
     for (var i = 0; i < circlesCount; i++) {
         var x = Math.random() * width;
         var y = Math.random() * height;

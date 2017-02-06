@@ -52,6 +52,7 @@ untangleGame.handleInput = function () {
 
     //鼠标抬起时候清空target数据
     $("#layers").bind("mouseup touchend", function (e) {
+        e.preventDefault();
         untangleGame.targetCircleIndex = undefined;
         untangleGame.checkLevelCompleteness();
     });
