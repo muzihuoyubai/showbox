@@ -26,9 +26,6 @@ body {
     height: 400px;
 }
 
-
-/* Define the 3D perspective view and dimension of each card. */
-
 .card {
     perspective: 600px;
     position: absolute;
@@ -44,6 +41,7 @@ body {
     position: absolute;
     transition: all .3s;
     backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
 }
 
 .front {
@@ -66,27 +64,6 @@ body {
 .card-removed {
     opacity: 0;
 }
-
-
-/* define the face graphics of the card deck*/
-
-
-/* cardAA stands for Spade A */
-
-
-/* cardA10 stands for Spade 10 */
-
-
-/* cardAK stands for Spade K */
-
-
-/* cardB_ stands for Heart _ */
-
-
-/* cardC_ stands for Club _ */
-
-
-/* cardD_ stands for Diamond _ */
 
 .cardAJ {
     background-position: -800px 0;
