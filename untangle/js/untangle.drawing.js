@@ -9,7 +9,7 @@ untangleGame.drawCircle = function (x, y, radius) {
     var ctx = untangleGame.layers[2];
     ctx.fillStyle = "GOLD";
     ctx.beginPath();
-    ctx.arc(x, y, radius, 0, Math.PI * 2, true);
+    ctx.arc(x, y, 20, 0, Math.PI * 2, true);
     ctx.closePath();
     ctx.fill();
 }
@@ -69,7 +69,8 @@ untangleGame.drawAllLines = function () {
 untangleGame.drawAllCircles = function () {
     for (var index in untangleGame.circles) {
         var circle = untangleGame.circles[index];
-        untangleGame.drawCircle(circle.x, circle.y, circle.radius);
+        //扩大圆圈的尺寸
+        untangleGame.drawCircle(circle.x, circle.y, 20);
     }
 }
 

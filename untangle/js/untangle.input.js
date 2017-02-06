@@ -18,7 +18,9 @@ untangleGame.handleInput = function () {
         for (var index in untangleGame.circles) {
             var circleX = untangleGame.circles[index].x;
             var circleY = untangleGame.circles[index].y;
-            var radius = untangleGame.circles[index].radius;
+            var radius = 20;
+            // 调整圆圈尺寸
+            //var radius = untangleGame.circles[index].radius;
             // 鼠标与圆心的距离小于半径
             if (Math.pow(mouseX - circleX, 2) + Math.pow(mouseY - circleY, 2) < Math.pow(radius, 2)) {
                 untangleGame.targetCircleIndex = index;
